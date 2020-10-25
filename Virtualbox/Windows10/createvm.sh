@@ -21,7 +21,6 @@ instance-id: $vmname
 local-hostname: $vmname
 EOF
 
-# GO BACK TO BASH
 ## create user-data file and a iso file with that user-data on it.
 ## User is ubuntu and password below.
 seed_iso="${vmname}.iso"
