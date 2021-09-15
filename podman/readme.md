@@ -15,3 +15,13 @@ apt update -qq -y
 apt -qq --yes install podman
 podman --version
 ```
+
+Post install commands like pulling a docker hub image using podman pull
+```
+podman pull mcr.microsoft.com/mssql/server:2019-latest
+```
+Starting the downloaded image.
+```
+podman run -h "happy" -e "ACCEPT_EULA=Y" -e "SA_PASSWORD=SuperStrongPa33Word!" -p 1433:1433 -d mcr.microsoft.com/mssql/server:2019-latest
+```
+This document is for Educational Purposes, meaning purposes directly related to learning, teaching, training, and research and development.
