@@ -6,7 +6,7 @@ fi
 
 # add permissions to run commands without password
 adduser tipsforitpros sudo
-echo 'tipsforitpros ALL=(ALL) NOPASSWD:ALL' | tee -a /etc/sudoers
+echo "tipsforitpros  ALL=(ALL) NOPASSWD:ALL" | sudo tee /etc/sudoers.d/tipsforitpros
 
 # Install ssh server
 apt-get install openssh-server -y
