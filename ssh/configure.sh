@@ -1,6 +1,6 @@
 #!/bin/bash
 if [[ $EUID -ne 0 ]]; then
-   echo "This script must be run as root" 
+   echo "This script must be run as root" | sudo  tee /var/log/config.log
    exit 1
 fi
 
