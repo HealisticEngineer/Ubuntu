@@ -4,6 +4,9 @@ if [[ $EUID -ne 0 ]]; then
    exit 1
 fi
 
+# create user
+useradd tipsforitpros
+
 # add permissions to run commands without password
 adduser tipsforitpros sudo
 echo "tipsforitpros  ALL=(ALL) NOPASSWD:ALL" | sudo tee /etc/sudoers.d/tipsforitpros
