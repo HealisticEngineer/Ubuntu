@@ -5,7 +5,7 @@ if [[ $EUID -ne 0 ]]; then
 fi
 
 # create user
-useradd tipsforitpros
+sudo useradd tipsforitpros
 
 # add permissions to run commands without password
 adduser tipsforitpros sudo
