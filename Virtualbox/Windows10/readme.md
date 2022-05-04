@@ -4,7 +4,7 @@ Script creates a ubuntu server from cloud image inside virtualbox running on win
 
 ### You also need genisoimage cloud-utils installed on WSL ###
 ```
-sudo apt genisoimage cloud-utils
+sudo apt install genisoimage cloud-utils
 ```
 Usage instructions, naviage to a folder that both Windows and Linux can see example /mnt/c/temp
 download the script:
