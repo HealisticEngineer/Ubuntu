@@ -14,6 +14,7 @@ wget -c https://raw.githubusercontent.com/HealisticEngineer/Ubuntu/master/Virtua
 Proceed to run the script from within WSL2
 
 ```
+chmod +x createvm.sh
 ./createvm.sh
 ```
 
