@@ -18,6 +18,7 @@ usermod --shell /bin/bash tipsforitpros
 sed -i 's/#Port 22/Port 2222/' /etc/ssh/sshd_config
 sed -i 's/#PermitRootLogin prohibit-password/PermitRootLogin no/' /etc/ssh/sshd_config
 sed -i 's/#PubkeyAuthentication yes/PubkeyAuthentication yes/' /etc/ssh/sshd_config
+sed -i 's/PasswordAuthentication yes/PasswordAuthentication no/' /etc/ssh/sshd_config
 
 # get ssh authorized_keys
 mkdir /home/tipsforitpros
