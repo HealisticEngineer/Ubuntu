@@ -11,6 +11,9 @@ useradd tipsforitpros
 adduser tipsforitpros sudo
 echo "tipsforitpros  ALL=(ALL) NOPASSWD:ALL" | sudo tee /etc/sudoers.d/tipsforitpros
 
+# set users shell to bash
+usermod --shell /bin/bash tipsforitpros
+
 # configure openssh server
 sed -i 's/#Port 22/Port 2222/' /etc/ssh/sshd_config
 sed -i 's/#PermitRootLogin prohibit-password/PermitRootLogin no/' /etc/ssh/sshd_config
